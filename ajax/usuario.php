@@ -122,14 +122,14 @@ switch ($_GET["op"]){
 
 	case 'verificar':
 		$logina=$_POST['logina'];
-	    $clavea=$_POST['clavea'];
+	  $clavea=$_POST['clavea'];
 
 	    //Hash SHA256 en la contraseña
-		//$clavehash=hash("SHA256",$clavea);
-		$clavehash=$clavea;
+		$clavehash=hash("SHA256",$clavea);
+		//$clavehash=$clavea;
 
 		//$clavehash=$clavea;
-header('../vistas/escritorio.php');
+    header('../vistas/escritorio.php');
 		$rspta=$usuario->verificar($logina, $clavehash);
 
 		$fetch=$rspta->fetch_object();

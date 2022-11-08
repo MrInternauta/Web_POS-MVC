@@ -278,9 +278,9 @@ CREATE TABLE `usuario` (
 --
 
 INSERT INTO `usuario` (`idusuario`, `nombre`, `tipo_documento`, `num_documento`, `direccion`, `telefono`, `email`, `cargo`, `login`, `clave`, `imagen`, `condicion`) VALUES
-(1, 'Admin admin', 'INE', '0', 'Jose Gálvez 1368 - Coatzacoalcos', '9211111111', 'admin@admin.com', 'admin', 'admin', 'admin', '1487132068.jpg', 1),
-(2, 'Vendedor', 'INE', '0', 'Calle 5 de mayo, Esquina 20 de Noviembre San Juan Volador, Pajapan, Ve', '9211111111', 'vendedor@prueba.com', 'VENDEDOR', 'vendedor', 'vendedor', '1543256487.png', 1),
-(3, 'Supervisor', 'INE', '001', 'Calle 5 de mayo, Esquina 20 de Noviembre San Juan Volador, Pajapan, Ve', '9211111111', 'supervisor@prueba.com', 'Vendedor', 'supervisor', 'supervisor', '1543175283.png', 1);
+(1, 'Admin admin', 'INE', '0', 'Jose Gálvez 1368 - Coatzacoalcos', '9211111111', 'admin@admin.com', 'admin', 'admin', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', '1487132068.jpg', 1),
+(2, 'Vendedor', 'INE', '0', 'Calle 5 de mayo, Esquina 20 de Noviembre San Juan Volador, Pajapan, Ve', '9211111111', 'vendedor@prueba.com', 'VENDEDOR', 'vendedor', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', '1543256487.png', 1),
+(3, 'Supervisor', 'INE', '001', 'Calle 5 de mayo, Esquina 20 de Noviembre San Juan Volador, Pajapan, Ve', '9211111111', 'supervisor@prueba.com', 'Vendedor', 'supervisor', '8c6976e5b5410415bde908bd4dee15dfb167a9c873fc4bb8a81f6f2ab448a918', '1543175283.png', 1);
 
 -- --------------------------------------------------------
 

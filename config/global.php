@@ -4,7 +4,7 @@
 
 
 //Ip de la pc servidor de base de datos
-define("DB_HOST","127.0.0.1");
+define("DB_HOST","db");
 
 //Nombre de la base de datos
 define("DB_NAME", "db_sistema");
@@ -13,7 +13,7 @@ define("DB_NAME", "db_sistema");
 define("DB_USERNAME", "root");
 
 //Contraseña del usuario de la base de datos
-define("DB_PASSWORD", "coatza");
+define("DB_PASSWORD", "notSecureChangeMe");
 /*
 //RASPERRY
 //Ip de la pc servidor de base de datos
@@ -39,5 +39,5 @@ define("DB_PASSWORD", "user_super");
 define("DB_ENCODE","utf8");
 
 //Definimos una constante como nombre del proyecto
-define("PRO_NOMBRE","Dolphin");
+define("PRO_NOMBRE","Abarrote");
 ?>
