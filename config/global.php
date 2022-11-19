@@ -1,8 +1,5 @@
 <?php 
 
-
-
-
 //Ip de la pc servidor de base de datos
 define("DB_HOST","db");
 

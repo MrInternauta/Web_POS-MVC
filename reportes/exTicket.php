@@ -31,7 +31,7 @@ $rspta = $venta->ventacabecera($_GET["id"]);
 $reg = $rspta->fetch_object();
 
 //Establecemos los datos de la empresa
-$empresa = "Ferreteria las Mayelas";
+$empresa = "Ferreteria las Marielas";
 $documento = "Software: Dolphin";
 $direccion = "Calle 5 de mayo, Esquina 20 de Noviembre\r\nSan Juan Volador, Pajapan, Ver.";
 $telefono = "RFC: MOPL8106212B3";
