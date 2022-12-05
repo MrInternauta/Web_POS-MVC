@@ -15,7 +15,9 @@ function init() {
         $('#idcategoria').selectpicker('refresh');
 
     });
-    $("#imagenmuestra").hide();
+  $("#imagenmuestra").hide();
+  $('div.dataTables_filter input').focus()
+
 }
 
 //Función limpiar
@@ -28,6 +30,8 @@ function limpiar() {
     $("#imagenactual").val("");
     $("#print").hide();
     $("#idarticulo").val("");
+    $('div.dataTables_filter input').focus()
+
 }
 
 //Función mostrar formulario
@@ -77,6 +81,8 @@ function listar() {
                 [0, "desc"]
             ] //Ordenar (columna,orden)
     }).DataTable();
+    $('div.dataTables_filter input').focus()
+
 }
 //Función para guardar o editar
 
@@ -132,6 +138,7 @@ function desactivar(idarticulo) {
             });
         }
     })
+    $('div.dataTables_filter input').focus()
 }
 
 //Función para activar registros
@@ -144,13 +151,15 @@ function activar(idarticulo) {
             });
         }
     })
+    $('div.dataTables_filter input').focus()
+
 }
 
 //función para generar el código de barras
 function generarbarcode() {
     codigo = $("#codigo").val();
     JsBarcode("#barcode", codigo);
-    $("#print").show();
+  $("#print").show();
 }
 
 //Función para imprimir el Código de barras

@@ -7,7 +7,7 @@ $idarticulo=isset($_POST["idarticulo"])? limpiarCadena($_POST["idarticulo"]):"";
 $idcategoria=isset($_POST["idcategoria"])? limpiarCadena($_POST["idcategoria"]):"";
 $codigo=isset($_POST["codigo"])? limpiarCadena($_POST["codigo"]):"";
 $nombre=isset($_POST["nombre"])? limpiarCadena($_POST["nombre"]):"";
-$stock=isset($_POST["stock"])? limpiarCadena($_POST["stock"]):"";
+$stock=isset($_POST["stock"])? limpiarCadena($_POST["stock"]):"1";
 $descripcion=isset($_POST["descripcion"])? limpiarCadena($_POST["descripcion"]):"";
 $imagen=isset($_POST["imagen"])? limpiarCadena($_POST["imagen"]):"";
 
@@ -51,7 +51,19 @@ switch ($_GET["op"]){
 		$rspta=$articulo->mostrar($idarticulo);
  		//Codificar el resultado utilizando json
  		echo json_encode($rspta);
+  break;
+
+  case 'mostrarcode':
+  $rspta=$articulo->mostrarcode($codigo);
+  //Codificar el resultado utilizando json
+  echo json_encode($rspta);
 	break;
+  
+  case 'mostrar_ingreso_by_code':
+    $rspta=$articulo->mostrar_ingreso_by_code($codigo);
+    //Codificar el resultado utilizando json
+    echo json_encode($rspta);
+    break;
 
 	case 'listar':
 		$rspta=$articulo->listar();

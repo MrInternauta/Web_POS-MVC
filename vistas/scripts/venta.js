@@ -2,7 +2,7 @@ var tabla;
 
 //Función que se ejecuta al inicio
 function init() {
-    mostrarform(false);
+    mostrarform(true);
     listar();
 
     $("#formulario").on("submit", function(e) {
@@ -52,7 +52,32 @@ function mostrarform(flag) {
         $("#btnGuardar").hide();
         $("#btnCancelar").show();
         $("#btnAgregarArt").show();
-        detalles = 0;
+      detalles = 0;
+
+      $('#codigo').val('');  
+      $('#codigo').focus()
+      $('#codigo').keypress(function (event) {
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if (keycode == '13') {
+          let codigo = $('#codigo').val();
+          if (!codigo) {
+            return
+          }
+          
+          $.post("../ajax/articulo.php?op=mostrar_ingreso_by_code", { codigo }, function (data, status) {
+            console.log(status);
+            $('#codigo').val(''); 
+            if (!data) {
+              $('#codigo').focus()
+              return;
+            }
+            data = JSON.parse(data);
+            agregarDetalle(data?.idarticulo, data.nombre, data.precio_venta);
+        })
+        }
+      });
+
+      
     } else {
         $("#listadoregistros").show();
         $("#formularioregistros").hide();
@@ -161,7 +186,9 @@ function mostrar(idventa) {
         //Ocultar y mostrar los botones
         $("#btnGuardar").hide();
         $("#btnCancelar").show();
-        $("#btnAgregarArt").hide();
+      $("#btnAgregarArt").hide();
+      $("#codigo").hide();
+
     });
 
     $.post("../ajax/venta.php?op=listarDetalle&id=" + idventa, function(r) {
@@ -220,7 +247,8 @@ function agregarDetalle(idarticulo, articulo, precio_venta) {
         modificarSubototales();
     } else {
         alert("Error al ingresar el detalle, revisar los datos del artículo");
-    }
+  }
+  $('#codigo').focus()
 }
 
 function modificarSubototales() {

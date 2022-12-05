@@ -45,6 +45,13 @@ Class Articulo
 		$sql="SELECT * FROM articulo WHERE idarticulo='$idarticulo'";
 		return ejecutarConsultaSimpleFila($sql);
 	}
+  
+	//Implementar un método para mostrar los datos de un registro a modificar
+	public function mostrarcode($idarticulo)
+	{
+		$sql="SELECT * FROM articulo WHERE codigo='$idarticulo'";
+		return ejecutarConsultaSimpleFila($sql);
+	}
 
 	//Implementar un método para listar los registros
 	public function listar()
@@ -66,6 +73,19 @@ Class Articulo
 		$sql="SELECT a.idarticulo,a.idcategoria,c.nombre as categoria,a.codigo,a.nombre,a.stock,(SELECT precio_venta FROM detalle_ingreso WHERE idarticulo=a.idarticulo order by iddetalle_ingreso desc limit 0,1) as precio_venta,a.descripcion,a.imagen,a.condicion FROM articulo a INNER JOIN categoria c ON a.idcategoria=c.idcategoria WHERE a.condicion='1'";
 		return ejecutarConsulta($sql);		
 	}
+
+  // public function mostrar_ingreso_by_code($code)
+	// {
+	// 	$sql="SELECT a.idarticulo,a.idcategoria,c.nombre as categoria,a.codigo,a.nombre,a.stock,(SELECT precio_venta FROM detalle_ingreso WHERE idarticulo=a.idarticulo order by iddetalle_ingreso desc limit 0,1) as precio_venta,a.descripcion,a.imagen,a.condicion FROM articulo a INNER JOIN categoria c ON a.idcategoria=c.idcategoria WHERE a.condicion='1' AND a.codigo='$code'";
+	// 	return ejecutarConsulta($sql);		
+	// }
+
+  public function mostrar_ingreso_by_code($codigo)
+	{
+		$sql="SELECT a.idarticulo,a.nombre,di.precio_compra,di.precio_venta FROM articulo a inner join detalle_ingreso di on di.idarticulo = a.idarticulo where a.codigo='$codigo'";
+		return ejecutarConsultaSimpleFila($sql);
+	}
+
 }
 
 ?>

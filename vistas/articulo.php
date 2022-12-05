@@ -69,7 +69,7 @@ if ($_SESSION['almacen']==1)
                           </div>
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <label>Stock(*):</label>
-                            <input type="number" class="form-control" name="stock" id="stock" required>
+                            <input type="number" value="1" class="form-control" name="stock" id="stock" required >
                           </div>
                           <div class="form-group col-lg-6 col-md-6 col-sm-6 col-xs-12">
                             <label>Descripción:</label>

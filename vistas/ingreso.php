@@ -78,20 +78,28 @@ if ($_SESSION['compras']==1)
                           </div>
                           <div class="form-group col-lg-2 col-md-2 col-sm-6 col-xs-12">
                             <label>Serie:</label>
-                            <input type="text" class="form-control" name="serie_comprobante" id="serie_comprobante" maxlength="7" placeholder="Serie">
+                            <input type="text" class="form-control" name="serie_comprobante" id="serie_comprobante" maxlength="7" placeholder="Serie" value="0">
                           </div>
                           <div class="form-group col-lg-2 col-md-2 col-sm-6 col-xs-12">
                             <label>Número:</label>
-                            <input type="text" class="form-control" name="num_comprobante" id="num_comprobante" maxlength="10" placeholder="Número" required="">
+                            <input type="text" class="form-control" name="num_comprobante" id="num_comprobante" maxlength="10" placeholder="Número" value="'0'" required>
                           </div>
                           <div class="form-group col-lg-2 col-md-2 col-sm-6 col-xs-12">
                             <label>Impuesto:</label>
-                            <input type="text" class="form-control" name="impuesto" id="impuesto" required="">
+                            <input type="text" class="form-control" name="impuesto" id="impuesto">
                           </div>
-                          <div class="form-group col-lg-3 col-md-3 col-sm-6 col-xs-12">
-                            <a data-toggle="modal" href="#myModal">           
-                              <button id="btnAgregarArt" type="button" class="btn btn-primary"> <span class="fa fa-plus"></span> Agregar Artículos</button>
-                            </a>
+                          <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">
+                            <div class="form-group h-60 col-lg-9 col-md-9 col-sm-9 col-xs-9" style="margin-top:15px" >
+                              <label>Buscar en catalago:</label>           
+                              <a data-toggle="modal" href="#myModal">
+                                <button id="btnAgregarArt" type="button" class="btn btn-primary"> <span class="fa fa-plus"></span> Agregar Artículos</button>
+                              </a>
+                            </div> 
+
+                            <div class="form-group col-lg-3 col-md-3 col-sm-3 col-xs-13">
+                              <label>Agregar por código:</label>
+                              <input type="text" class="form-control" name="codigo" id="codigo"  autofofus>
+                            </div>
                           </div>
 
                           <div class="col-lg-12 col-sm-12 col-md-12 col-xs-12">

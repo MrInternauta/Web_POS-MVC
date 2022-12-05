@@ -2,7 +2,7 @@ var tabla;
 
 //Función que se ejecuta al inicio
 function init() {
-    mostrarform(false);
+    mostrarform(true);
     listar();
 
     $("#formulario").on("submit", function(e) {
@@ -13,7 +13,7 @@ function init() {
         $("#idproveedor").html(r);
         $('#idproveedor').selectpicker('refresh');
     });
-
+    $('div.dataTables_filter input').focus()
 }
 
 //Función limpiar
@@ -37,7 +37,8 @@ function limpiar() {
 
     //Marcamos el primer tipo_documento
     $("#tipo_comprobante").val("Boleta");
-    $("#tipo_comprobante").selectpicker('refresh');
+  $("#tipo_comprobante").selectpicker('refresh');
+  $('div.dataTables_filter input').focus()
 }
 
 //Función mostrar formulario
@@ -53,7 +54,31 @@ function mostrarform(flag) {
         $("#btnGuardar").hide();
         $("#btnCancelar").show();
         detalles = 0;
-        $("#btnAgregarArt").show();
+      $("#btnAgregarArt").show();
+
+      $('#codigo').val('');  
+      $('#codigo').focus()
+      $('#codigo').keypress(function (event) {
+        var keycode = (event.keyCode ? event.keyCode : event.which);
+        if (keycode == '13') {
+          let codigo = $('#codigo').val();
+          if (!codigo) {
+            $('#codigo').focus()
+            return
+          }
+          
+          $.post("../ajax/articulo.php?op=mostrarcode", { codigo }, function (data, status) {
+            console.log(data);
+            $('#codigo').val(''); 
+            if (!data) {
+              $('#codigo').focus()
+              return;
+            }
+            data = JSON.parse(data);
+            agregarDetalle(data?.idarticulo, data.nombre);
+        })
+        }
+      });
     } else {
         $("#listadoregistros").show();
         $("#formularioregistros").hide();
@@ -94,6 +119,7 @@ function listar() {
                 [0, "desc"]
             ] //Ordenar (columna,orden)
     }).DataTable();
+    $('div.dataTables_filter input').focus()
 }
 
 
@@ -120,6 +146,7 @@ function listarArticulos() {
                 [0, "desc"]
             ] //Ordenar (columna,orden)
     }).DataTable();
+    $('div.dataTables_filter input').focus()
 }
 //Función para guardar o editar
 
@@ -137,7 +164,7 @@ function guardaryeditar(e) {
 
         success: function(datos) {
             bootbox.alert(datos);
-            mostrarform(false);
+            mostrarform(true);
             listar();
         }
 
@@ -163,7 +190,9 @@ function mostrar(idingreso) {
         //Ocultar y mostrar los botones
         $("#btnGuardar").hide();
         $("#btnCancelar").show();
-        $("#btnAgregarArt").hide();
+      $("#btnAgregarArt").hide();
+      $("#codigo").hide();
+
     });
 
     $.post("../ajax/ingreso.php?op=listarDetalle&id=" + idingreso, function(r) {
@@ -181,6 +210,7 @@ function anular(idingreso) {
             });
         }
     })
+    $('div.dataTables_filter input').focus()
 }
 
 //Declaración de variables necesarias para trabajar con las compras y
@@ -223,7 +253,10 @@ function agregarDetalle(idarticulo, articulo) {
         modificarSubototales();
     } else {
         alert("Error al ingresar el detalle, revisar los datos del artículo");
-    }
+  }
+  $('#codigo').val('');  
+  $('#codigo').focus()
+
 }
 
 function modificarSubototales() {
