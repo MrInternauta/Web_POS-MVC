@@ -14,7 +14,7 @@ services:
   db:
     container_name: db
     env_file:
-      - .env
+      - .env.prod
     image: mysql
     restart: always
     ports:
@@ -23,7 +23,7 @@ services:
       - ./mysql_data:/var/lib/mysql
   phpmyadmin:
     env_file:
-      - .env
+      - .env.prod
     image: phpmyadmin/phpmyadmin
     ports:
       - '8080:80'
