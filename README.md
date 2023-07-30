@@ -12,6 +12,21 @@ sudo docker run -p 8080:80 -p 3306:3306 bb8e1e1c9fa7
 ## Instalación
 ```
 importar la base de datos e iniciar apache.
+
+```
+## Tag versión
+```
+sudo docker tag web_pos:latest public.ecr.aws/xxx/web_pos:latest
+```
+
+## Login
+```
+aws ecr-public get-login-password --region us-east-1 | sudo docker login --username AWS --password-stdin public.ecr.aws/xxx
+```
+
+## push
+```
+sudo docker push public.ecr.aws/xxxx/web_pos:latest
 ```
 ## Uso
 ```
