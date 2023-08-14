@@ -143,7 +143,7 @@ switch ($_GET["op"]){
 	        $_SESSION['login']=$fetch->login;
 
 	        //Obtenemos los permisos del usuario
-	    	$marcados = $usuario->listarmarcados($fetch->idusuario);
+	    $marcados = $usuario->listarmarcados($fetch->idusuario);
 
 	    	//Declaramos el array para almacenar todos los permisos marcados
 			$valores=array();

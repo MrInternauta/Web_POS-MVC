@@ -5,30 +5,7 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
-    depends_on:
-      - db
     volumes:
       - .:/var/www/html/
     ports:
-      - 8000:80
-  db:
-    container_name: db
-    env_file:
-      - .env.prod
-    image: mysql
-    restart: always
-    ports:
-      - "9906:3306"
-    volumes:
-      - ./mysql_data:/var/lib/mysql
-  phpmyadmin:
-    env_file:
-      - .env.prod
-    image: phpmyadmin/phpmyadmin
-    ports:
-      - '8080:80'
-    restart: always
-    environment:
-      PMA_HOST: db
-    depends_on:
-      - db
+      - 8080:80
