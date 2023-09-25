@@ -1,13 +1,13 @@
 <?php 
 
 //Ip de la pc servidor de base de datos
-define("DB_HOST", 'myrdsinstance.wewe.us-wwewewweww-1.rds.amazonaws.com');
+define("DB_HOST", 'localhost');
 
 //Nombre de la base de datos
 define("DB_NAME",'db_sistema');
 
 //Usuario de la base de datos
-define("DB_USERNAME",'myrdsuser');
+define("DB_USERNAME",'root');
 
 //Contraseña del usuario de la base de datos
 define("DB_PASSWORD", 'myrdspassword');

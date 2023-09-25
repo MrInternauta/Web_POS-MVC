@@ -8,4 +8,21 @@ services:
     volumes:
       - .:/var/www/html/
     ports:
-      - 8080:80
+      - 8081:80
+    networks:
+      - dev_pos_dev
+  mysql:
+    env_file:
+      - .env
+    container_name: mysql_pos_dev
+    ports:
+      - '3306:3306'
+    image: mysql:5.7
+    volumes:
+      - ./mysql_data:/var/lib/mysql
+    networks:
+      - dev_pos_dev
+networks:
+  dev_pos_dev:
+    name: dev_pos_dev
+    driver: bridge

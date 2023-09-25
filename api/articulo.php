@@ -62,5 +62,24 @@ switch ($_GET["op"]){
     $test[] = $row; 
     echo json_encode($test);
 	break;
+
+  case 'listarArticulosVenta':
+		require_once "../modelos/Articulo.php";
+		$articulo=new Articulo();
+
+		$rspta=$articulo->listarActivosVenta();
+ 		//Vamos a declarar un array
+ 		$data= Array();
+ 		while ($reg=$rspta->fetch_object()){
+      $data[] = $reg; 
+ 		}
+
+ 		$results = array(
+ 			"sEcho"=>1, //Información para el datatables
+ 			"iTotalRecords"=>count($data), //enviamos el total registros al datatable
+ 			"iTotalDisplayRecords"=>count($data), //enviamos el total registros a visualizar
+ 			"aaData"=>$data);
+ 		echo json_encode($results);
+	break;
 }
 ?>
