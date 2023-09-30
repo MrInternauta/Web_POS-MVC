@@ -39,3 +39,10 @@ pass:  admin
 
 ## Licencia
 [MIT](https://opensource.org/licenses/MIT)
+
+
+## DB
+db_sistemaBase
+categoria
+articulo
+persona

@@ -7,17 +7,20 @@ services:
       dockerfile: Dockerfile
     volumes:
       - .:/var/www/html/
+    depends_on:
+      - db
     ports:
       - 8081:80
     networks:
       - dev_pos_dev
-  mysql:
+  db:
     env_file:
       - .env
-    container_name: mysql_pos_dev
+    container_name: db
     ports:
       - '3306:3306'
-    image: mysql:5.7
+    image: mysql
+    restart: always
     volumes:
       - ./mysql_data:/var/lib/mysql
     networks:

@@ -1,4 +1,4 @@
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+INSERT INTO articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
 	 (11,'7502241360163','VAPE INSECTICIDA',120,'','',1),
 	 (11,'7501059292406','SOBRE NESCAFE DOLCA DE 10 GR.',24,'','',1),
 	 (11,'7503013328053','ATRAPA MOSCAS CATCH''A MAX',2,'','',1),
@@ -8,8 +8,8 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (11,'750101835238','SOPA INSTANTANEA LA MODERNA ESTRELLA',1,'','',1),
 	 (11,'750108315092','SOPA INSTANTANEA LA MODERNA FIDEOS',1,'','',1),
 	 (11,'7501005190794','KNORR TOMATE 12 pz',12,'','',1),
-	 (11,'7506192502689','RICO POLLO',20,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (11,'7506192502689','RICO POLLO',20,'','',1),
+
 	 (11,'750105199292','KNORR POLLO',24,'','',1),
 	 (11,'7506205815867','CHOCO MILK',200,'','',1),
 	 (11,'75058883','CERILLOS JAGUARES',200,'','',1),
@@ -19,8 +19,8 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (11,'7501077400715','MASECA CHICA  570G',5,'','',1),
 	 (11,'750102606869','ROSA VENUS BLANCO',2,'','',1),
 	 (11,'7501026006661','ROSA VENUS ROSA',3,'','',1),
-	 (11,'752121291088','JABONCITO',6,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (11,'752121291088','JABONCITO',6,'','',1),
+
 	 (11,'7506306245891','SAVILE',1,'','',1),
 	 (11,'7501026005688','ZOTE 200G ROSA',2,'','',1),
 	 (11,'7501026005381','ZOTE 200G BLANCO',1,'','',1),
@@ -30,8 +30,7 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (11,'7501077400050','Maseca 1KG',9,'','',1),
 	 (11,'7503015181274','Leche flor de Mexico',10,'','',1),
 	 (11,'604498702585','Leche vida blanca',200,'','',1),
-	 (11,'7502251520014','Harina sol de oro',200,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (11,'7502251520014','Harina sol de oro',200,'','',1),
 	 (11,'7509546682570','Suavitel lila',200,'','',1),
 	 (11,'7509546682594','Suavitel acqua',200,'','',1),
 	 (11,'7509546051932','Axion 750',200,'','',1),
@@ -41,8 +40,8 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (11,'7501020566994','Yomi lala chocolate',200,'','',1),
 	 (11,'7501020567007','Yomi lala vainilla',200,'','',1),
 	 (11,'7501020567014','Yomi lala fresa',200,'','',1),
-	 (11,'011848245003','Vinagre Blanco',200,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (11,'011848245003','Vinagre Blanco',200,'','',1),
+
 	 (11,'7501003127235','Salsa casera',200,'','',1),
 	 (11,'7501008765012','Galletas cuétara chavalín',20,'','',1),
 	 (11,'7500478005857','Bizcochito gamesa',20,'','',1),
@@ -52,8 +51,8 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (11,'7501008769010','Galleta cuétara diavolín',20,'','',1),
 	 (11,'7501058611062','Leche evaporada carnation',200,'','',1),
 	 (11,'7501017042937','Frijoles negros refritos  la costeña',200,'','',1),
-	 (11,'7501006559026','Palomitas mantequilla',200,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (11,'7501006559026','Palomitas mantequilla',200,'','',1),
+
 	 (11,'7501000664382','Galletas doradas gamesa',20,'','',1),
 	 (11,'7501000658923','Galletas marías gamesa',20,'','',1),
 	 (11,'7501003300676','Mostaza',200,'','',1),
@@ -63,8 +62,7 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (11,'7500478013661','Emeperador sabor nuez',20,'','',1),
 	 (11,'7500478013647','Emperador sabor chocolate',20,'','',1),
 	 (11,'4501151205215','Vasos Bosco plastico 6oz 50pz',1,'','',1),
-	 (11,'7501000658329','Galletas marías azucaradas',20,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (11,'7501000658329','Galletas marías azucaradas',20,'','',1),
 	 (11,'7502208805171','Platos charola 25pz',1,'','',1),
 	 (11,'038629002068','Galletas marianitas de coco la moderna',20,'','',1),
 	 (11,'7500478023608','Galletas maravillas gamesa',20,'','',1),
@@ -74,8 +72,7 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (11,'9250774021072','Tenedor mediano jaguar 25pz',2,'','',1),
 	 (11,'752216085059','Tenedor mediano 25pz jaguar',2,'','',1),
 	 (11,'7501431248038','Cuchara sopera convermex 25pz',4,'','',1),
-	 (11,'7501431218031','Cuchara 14cm convermex 25pz',3,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (11,'7501431218031','Cuchara 14cm convermex 25pz',3,'','',1),
 	 (11,'7501431208032','Cuchara desechable chica convermex 50pz',1,'','',1),
 	 (11,'7501000664221','Saladitas gamesa',20,'','',1),
 	 (11,'7503032460055','Zuko sabor naranja',20,'','',1),
@@ -85,8 +82,8 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (11,'7622210572684','Tang sabor melón',20,'','',1),
 	 (11,'7501003100085','Mole doña maria 360g',8,'','',1),
 	 (11,'7503032460185','Zuko sabor sandía',20,'','',1),
-	 (11,'7503032460123','Zuko sabor tamarindo',20,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (11,'7503032460123','Zuko sabor tamarindo',20,'','',1),
+
 	 (11,'7501069214061','Fecula de maiz tres estrellas 95g',5,'','',1),
 	 (11,'4503042460086','Zuko sabor uva',20,'','',1),
 	 (11,'7503032460109','Zuko sabor fresa',20,'','',1),
@@ -96,8 +93,7 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (11,'7501200486005','Leche condensada pronto',2,'','',1),
 	 (11,'7501000612161','Cremax sabor vainilla',20,'','',1),
 	 (11,'7500463662102','Horchata de arroz 250ml El sabor de la sierra',4,'','',1),
-	 (11,'7501062702657','Chiles rellenos la morena 380g',1,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (11,'7501062702657','Chiles rellenos la morena 380g',1,'','',1),
 	 (11,'7501000612130','Cremax sabor chocolate',20,'','',1),
 	 (11,'070662141229','Nissin sabor camarón, habanero, limón',20,'','',1),
 	 (11,'070662140024','Nissin con camarón',20,'','',1),
@@ -107,8 +103,7 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (12,'7501000122332','Pan blanco bimbo grande',10,'','',1),
 	 (11,'7501111100724','Arroz prima 500g',7,'','',1),
 	 (12,'7501000364695','Totopos del hogar',10,'','',1),
-	 (12,'7501030418399','Donitas espolvoreadas bimbo',10,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (12,'7501030418399','Donitas espolvoreadas bimbo',10,'','',1),
 	 (11,'7501111100717','Arroz prima 250g',12,'','',1),
 	 (12,'7501030475521','Mantecadas bimbo sabor vainilla',10,'','',1),
 	 (12,'7500810018743','Madalenas bimbo 62g',10,'','',1),
@@ -118,8 +113,8 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (11,'741120000067','Pinomax 500ml',8,'','',1),
 	 (12,'7501000112784','Nito bimbo',10,'','',1),
 	 (12,'7501030472698','Bimbuñuelos',10,'','',1),
-	 (12,'7501000116447','Bran frut',2,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (12,'7501000116447','Bran frut',2,'','',1),
+
 	 (12,'7501000149100','Empanizado crujiente',2,'','',1),
 	 (12,'7501000111855','Pan molido clásico',2,'','',1),
 	 (11,'7501025403027','Pinol 500 ml',20,'','',1),
@@ -129,8 +124,8 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (11,'7501026004629','Detergente roma  250g',18,'','',1),
 	 (11,'7501006705942','Detergente ace 250g',12,'','',1),
 	 (11,'7501065908841','Detergente Ariel 250g',12,'','',1),
-	 (11,'7509546018911','Lavatrastes axion 250g',1,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (11,'7509546018911','Lavatrastes axion 250g',1,'','',1),
+
 	 (12,'7501030490272','Tortillinas tia rosa',5,'','',1),
 	 (12,'7501000140855','Triki-trakes',2,'','',1),
 	 (11,'7501018310103','Spaghetti la moderna 200g',9,'','',1),
@@ -140,8 +135,7 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (12,'7501000127344','Lors',2,'','',1),
 	 (11,'7501005199292','KNORR pollo 24pz',48,'','',1),
 	 (12,'7501030431190','Suavicremas sabor fresa 112g',1,'','',1),
-	 (12,'19732688','Suavicremas sabor chocolate',2,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (12,'19732688','Suavicremas sabor chocolate',2,'','',1),
 	 (12,'7501030490951','Polvorones',2,'','',1),
 	 (12,'7501030491644','Canelitas',2,'','',1),
 	 (11,'7501000912605','Cafe dolca 22g.',20,'','',1),
@@ -151,8 +145,8 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (12,'7501000153800','Pingüinos',2,'','',1),
 	 (12,'7501000153107','Gansito',4,'','',1),
 	 (11,'7501003300652','Mayonesa McCormick 105g',16,'','',1),
-	 (11,'7501003303394','Mayonesa McCormick 228g',2,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (11,'7501003303394','Mayonesa McCormick 228g',2,'','',1),
+
 	 (12,'7501030418528','Triki-trakes maxitubo',2,'','',1),
 	 (12,'7501030418559','Polvorones maxitubo',1,'','',1),
 	 (12,'7501030457190','mini barritas maxitubo sabor fresa',2,'','',1),
@@ -162,8 +156,7 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (11,'7502224043557','Atun agua nair 120g',5,'','',1),
 	 (12,'7501030418504','Príncipe maxitubo',2,'','',1),
 	 (11,'7502224043564','Atun en aceite nair',4,'','',1),
-	 (12,'7501030418504','Lors maxitubo',1,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (12,'7501030418504','Lors maxitubo',1,'','',1),
 	 (12,'7501000153763','Rocko',2,'','',1),
 	 (11,'7501017004041','Vinagre Blanco la costeña 536ml',1,'','',1),
 	 (11,'7501011142299','Crujitos',4,'','',1),
@@ -173,8 +166,7 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (11,'7501011143586','Cheetos torciditos',1,'','',1),
 	 (11,'049190143753','Cheetos flamin hot',3,'','',1),
 	 (11,'7401001583517','Aceite purela 445ml',20,'','',1),
-	 (11,'7501011111028','Rancheritos',3,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (11,'7501011111028','Rancheritos',3,'','',1),
 	 (11,'7501005107013','Atole maizena chocolate',5,'','',1),
 	 (11,'7501011143999','Cheetos nacho',1,'','',1),
 	 (11,'7501005106979','Atole maizena vainilla',5,'','',1),
@@ -184,8 +176,7 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (11,'7501011123878','Doritos incógnita',1,'','',1),
 	 (11,'7501069213859','Atole tres estrellas chocolate',5,'','',1),
 	 (11,'7501069213842','Atole tres estrellas fresa',5,'','',1),
-	 (11,'7501017051298','Ensalada campesina la costeña 220g',15,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (11,'7501017051298','Ensalada campesina la costeña 220g',15,'','',1),
 	 (11,'7501052471044','Elotes Clemente',12,'','',1),
 	 (11,'5507403127235','Salsa casera herdez',30,'','',1),
 	 (11,'7501020515299','Media crema lala',12,'','',1),
@@ -195,8 +186,7 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (11,'7501728042974','Esponja Suprema',5,'','',1),
 	 (11,'7501026026577','Detergente foca 250g',12,'','',1),
 	 (11,'7501026027550','Jabol blanca nieves 250g',12,'','',1),
-	 (11,'7500435146678','Jabon liquido salvo 15ml',12,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (11,'7500435146678','Jabon liquido salvo 15ml',12,'','',1),
 	 (11,'7501035910072','Limpiador ajax',5,'','',1),
 	 (11,'666748119987','Fibra flexi',5,'','',1),
 	 (11,'7501728040529','Tendedero 10mt',2,'','',1),
@@ -206,8 +196,8 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (11,'7501018310752','Sopa moñito la moderna 200g',6,'','',1),
 	 (11,'7501018310035','Sopa fideos la moderna 200g',6,'','',1),
 	 (11,'6507011310523','Sopa coditos la moderna 200g',6,'','',1),
-	 (11,'7501018310561','Sopa Caracol 2  la moderna 200g',6,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (11,'7501018310561','Sopa Caracol 2  la moderna 200g',6,'','',1),
+
 	 (11,'7501011123380','Doritos pizzerola',2,'','',1),
 	 (11,'7501011163706','Doritos 3D',2,'','',1),
 	 (11,'034587090031','Sal Klara',6,'','',1),
@@ -217,8 +207,7 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (11,'7501011104099','Ruffles queso',2,'','',1),
 	 (11,'7501791619882','Maiz bodega 500g.',1,'','',1),
 	 (11,'7500478019083','Avena  instantana quaker 288g',6,'','',1),
-	 (11,'7501379201522','Garbanzo 500g bueno',1,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (11,'7501379201522','Garbanzo 500g bueno',1,'','',1),
 	 (11,'7500525363213','Frijol precissimo',2,'','',1),
 	 (11,'7406171013697','Jaboncito de bolsa',6,'','',1),
 	 (11,'7501011123588','Doritos nachos',3,'','',1),
@@ -228,8 +217,8 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (11,'7401001583500','Salsa tipo inglesa crose',6,'','',1),
 	 (8,'9506083297593','Salsa maggi 45ml',2,'','',1),
 	 (11,'7501011118119','Sabritas crema y especies',5,'','',1),
-	 (11,'7501003393050','Salsa bufalo',1,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (11,'7501003393050','Salsa bufalo',1,'','',1),
+
 	 (11,'7501011101463','Sabritas adobadas',3,'','',1),
 	 (11,'011848425726','Salsa habanero la anita',1,'','',1),
 	 (11,'7501011143739','Sabritas flamin hot',4,'','',1),
@@ -239,8 +228,8 @@ INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,ima
 	 (11,'7501017005611','Pure de tomat la costeña',12,'','',1),
 	 (11,'7501079702817','Pure de tomate El fuerte',12,'','',1),
 	 (11,'7501011148963','Paketaxo mezcladito',2,'','',1),
-	 (11,'7501011114623','Paketaxo quexo',1,'','',1);
-INSERT INTO db_sistema.articulo (idcategoria,codigo,nombre,stock,descripcion,imagen,condicion) VALUES
+	 (11,'7501011114623','Paketaxo quexo',1,'','',1),
+
 	 (11,'7501011112438','Paketaxo botanero',4,'','',1),
 	 (11,'7501011144460','Paketaxo xtra flamin hot',4,'','',1),
 	 (11,'741113000012','Clarasol de 500ml',40,'','',1),

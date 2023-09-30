@@ -8,6 +8,5 @@ INSERT INTO db_sistema.persona (tipo_persona,nombre,tipo_documento,num_documento
 	 ('Proveedor','SORIANA','INE','','','',''),
 	 ('Proveedor','DIPEPSA','INE','','','',''),
 	 ('Proveedor','TORTILLA','INE','','','',''),
-	 ('Proveedor','La flor de trigo','INE','','','','');
-INSERT INTO db_sistema.persona (tipo_persona,nombre,tipo_documento,num_documento,direccion,telefono,email) VALUES
+	 ('Proveedor','La flor de trigo','INE','','','',''),
 	 ('Cliente','CLIENTE DIARIO','INE','','','','');
