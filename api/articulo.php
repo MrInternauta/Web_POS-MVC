@@ -1,10 +1,13 @@
 <?php 
 require_once "../modelos/Articulo.php";
+require_once "../modelos/Ingreso.php";
 header("Content-Type: application/json");
 
 require_once "./helper.php";
-cors();
 
+
+cors();
+$ingreso=new Ingreso();
 $articulo=new Articulo();
 $data = json_decode(file_get_contents('php://input'), true);
 
@@ -14,7 +17,10 @@ $codigo=isset($data["codigo"])? limpiarCadena($data["codigo"]):"";
 $nombre=isset($data["nombre"])? limpiarCadena($data["nombre"]):"";
 $stock=isset($data["stock"])? limpiarCadena($data["stock"]):"1";
 $descripcion=isset($data["descripcion"])? limpiarCadena($data["descripcion"]):"";
-$imagen=isset($_POST["imagen"])? limpiarCadena($_POST["imagen"]):"";
+$imagen=isset($data["imagen"])? limpiarCadena($data["imagen"]):"";
+
+
+
 
 switch ($_GET["op"]){
 
@@ -80,6 +86,19 @@ switch ($_GET["op"]){
  			"iTotalDisplayRecords"=>count($data), //enviamos el total registros a visualizar
  			"aaData"=>$data);
  		echo json_encode($results);
+	break;
+
+  case 'guardaryeditar':
+		if (empty($idingreso)){
+			$rspta=$ingreso->insertar("1","1","1","1","1","12/02/1990","0","0",$data["idarticulo"],$data["cantidad"],$data["precio_compra"],$data["precio_venta"]);
+
+			$myObj["message"] =  $rspta ? "Ingreso registrado" : "No se pudieron registrar todos los datos del ingreso";
+
+      echo json_encode($myObj);
+
+		}
+		else {
+		}
 	break;
 }
 ?>
